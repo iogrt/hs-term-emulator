@@ -36,7 +36,7 @@ library
     , attoparsec     >=0.13.2.1 && <0.15
     , base           >=4.8      && <5
     , bytestring
-    , containers     >=0.6.0.1  && <7
+    , containers     >=0.6.0.1  && <8
     , lens           >=4.19     && <6
     , text
     , vector         ^>=0.12.2.0
