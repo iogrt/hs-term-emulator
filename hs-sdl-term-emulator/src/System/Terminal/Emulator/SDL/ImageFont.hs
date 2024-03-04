@@ -10,7 +10,7 @@ import qualified SDL as SDL
 
 loadImageFont :: IO SDL.Surface
 loadImageFont = do
-  bmp <- SDL.loadBMP "font.bmp"
+  bmp <- SDL.loadBMP "../font.bmp"
   rgba <- convertGrayscaleToAlpha bmp
   SDL.freeSurface bmp
   pure rgba

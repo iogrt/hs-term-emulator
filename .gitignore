@@ -1,2 +1,4 @@
 /dist-newstyle/
 cabal.project.local
+hs-term-emulator/result
+hs-sdl-term-emulator/result

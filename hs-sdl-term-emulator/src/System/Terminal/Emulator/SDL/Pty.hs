@@ -23,7 +23,8 @@ launchPty initialSize getInput getResize onOutput = do
           <> [("TERM", termEnvVarName)]
 
   bracket
-    (spawnWithPty (Just environ) False "/bin/bash" [] initialSize)
+    -- changed for NixOS: using /usr/bin/env bash
+    (spawnWithPty (Just environ) False "/usr/bin/env" ["bash"] initialSize)
     ( \(pty, processHandle) -> do
         closePty pty
         _ <- waitForProcess processHandle
