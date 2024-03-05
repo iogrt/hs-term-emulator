@@ -1,6 +1,6 @@
-cabal-version:      2.4
+cabal-version:      3.0
 name:               hs-term-emulator
-version:            0.1.0.4
+version:            0.1.0.5
 synopsis:           Terminal Emulator written in 100% Haskell
 description:        See: https://github.com/bitc/hs-term-emulator#readme
 homepage:           https://github.com/bitc/hs-term-emulator
@@ -32,14 +32,14 @@ library
     System.Terminal.Emulator.TermLines
 
   build-depends:
-    , ansi-terminal  >=0.10     && <0.12
-    , attoparsec     >=0.13.2.1 && <0.15
-    , base           >=4.8      && <5
+    , ansi-terminal  
+    , attoparsec    
+    , base         
     , bytestring
-    , containers     >=0.6.0.1  && <8
-    , lens           >=4.19     && <6
+    , containers   
+    , lens         
     , text
-    , vector         ^>=0.12.2.0
+    , vector      
 
   hs-source-dirs:   src
   default-language: Haskell2010
@@ -58,15 +58,15 @@ test-suite spec
 
   hs-source-dirs:     test
   build-depends:
-    , ansi-terminal     >=0.10     && <0.12
-    , attoparsec        >=0.13.2.1 && <0.15
-    , base              >=4.8      && <5
+    , ansi-terminal    
+    , attoparsec      
+    , base            
     , hs-term-emulator
-    , hspec             ^>=2.8.2
-    , lens              >=4.19     && <6
-    , QuickCheck        ^>=2.14.0
+    , lens           
+    , QuickCheck    
     , text
-    , vector            ^>=0.12.2.0
+    , vector       
+    , hspec       
 
   default-language:   Haskell2010
   build-tool-depends: hspec-discover:hspec-discover ==2.*
